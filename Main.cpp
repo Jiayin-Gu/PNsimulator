@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 		std::tie(steady_state, J_n, J_p, current)=steady_state_evaluating(state);
 		fout<<std::setw(15)<<std::setprecision(8)<<V<<"  ";
 		fout<<std::setw(15)<<std::setprecision(8)<<current<<'\n';
-		cout<<"progress: voltage "<<V<<"  for range [-5.0, 4.0]"<<endl;
+		cout<<"progress: voltage "<<V<<"  in range [-5.0, 4.0]"<<endl;
 	}
 	fout.close();
 

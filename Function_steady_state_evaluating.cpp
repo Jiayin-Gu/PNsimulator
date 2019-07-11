@@ -7,11 +7,10 @@ std::tuple<Cdiode, Cvector, Cvector, double> diode_evolving(Cdiode &);
 using std::cin;
 using std::cout;
 using std::endl;
-std::tuple<Cdiode, Cvector, Cvector, double> steady_state_evaluating(Cdiode initial_state)
+std::tuple<Cdiode, Cvector, Cvector, double> steady_state_evaluating(Cdiode state)
 {
 	int N=Cdiode::m_N[0]+Cdiode::m_N[1];
 	int num{100000}, runs{100000};
-	Cdiode state=initial_state;
 	Cvector electron(0.0, N), hole(0.0, N), charge(0.0, N), potential(0.0, N);
 	Cvector J_n(0.0, N+1), J_n_sum(0.0, N+1);
 	Cvector J_p(0.0, N+1), J_p_sum(0.0, N+1);
