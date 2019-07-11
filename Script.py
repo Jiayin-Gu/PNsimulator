@@ -12,7 +12,6 @@ def shockley_curve(v, I_s):
 def I_V():
 	data=np.loadtxt("I_V.out")
 	V=data[:, 0]
-	section=8000000
 	I=data[:, 1]
 
 
